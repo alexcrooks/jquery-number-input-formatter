@@ -1,0 +1,1 @@
+# jQuery Number Input Formatter
