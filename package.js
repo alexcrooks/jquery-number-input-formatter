@@ -1,6 +1,6 @@
 Package.describe({
   name: 'acrooks:jquery-number-input-formatter',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'A jQuery library to dynamically display a numeric input\'s formatted value in a label.',
   git: 'https://github.com/alexcrooks/jquery-number-input-formatter.git',
   documentation: 'README.md'
