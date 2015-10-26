@@ -7,6 +7,6 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.use('jquery@1.4.0');
-  api.addFiles('src/jquery.number-input-formatter.js');
+  api.use('jquery@1.4.0', 'client');
+  api.addFiles('src/jquery.number-input-formatter.js', 'client');
 });
