@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Number Input Formatter</title>
+  <script src="jquery.min.js"></script>
+  <script src="../src/jquery.number-input-formatter.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('.number-input-example-1').numberInputFormatter();
+
+      $('.number-input-example-2').numberInputFormatter();
+
+      $('.number-input-example-3').numberInputFormatter({
+        confirmationSelector: '.confirmation-text-1',
+      });
+
+      $('.number-input-example-4').numberInputFormatter({
+        confirmationSelector: '.confirmation-text-2',
+        errorSelector: '.error-text-1',
+      });
+
+      $('.number-input-example-5').numberInputFormatter({
+        confirmationSelector: '.confirmation-text-3',
+        errorSelector: '.error-text-2',
+        errorMessage: 'That\'s not a number!',
+      });
+
+    });
+  </script>
+</head>
+<body>
+
+<h1>jQuery Number Input Formatter</h1>
+
+<p>This library will take an input that is expected to be numeric, and present
+a formatted number in a sibling DOM element so the user can more easily identify
+the number they typed in.</p>
+
+<div>
+  <p>The basic example, a single input instantiated with a single call.</p>
+  <input class="number-input-example-1" value="12345.678">
+  <span></span>
+</div>
+
+<div>
+  <p>A more complex example, a multiple inputs instantiated with a single call.</p>
+  <input class="number-input-example-2" value="12345.678">
+  <span></span>
+  <input class="number-input-example-2" value="87654.321">
+  <span></span>
+</div>
+
+<div>
+  <p>Defining a custom selector for the DOM element containing the formatted number.</p>
+  <input class="number-input-example-3" value="12345.678">
+  <div class="confirmation-text-1"></div>
+</div>
+
+<div>
+  <p>Defining an error DOM element.</p>
+  <input class="number-input-example-4" value="12345.678">
+  <div class="error-text-1"></div>
+  <div class="confirmation-text-2"></div>
+</div>
+
+<div>
+  <p>Defining custom error message.</p>
+  <input class="number-input-example-5" value="12345.678">
+  <div class="error-text-2"></div>
+  <div class="confirmation-text-3"></div>
+</div>
+
+</body>
+</html>
